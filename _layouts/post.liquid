@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      {% include "head.liquid" %}
+    </head>
+    <body>
+      {% include "navbar.liquid" %}
+
+      <div class="contents">
+        <div class="row">
+          <div class="section">
+            <h1>{{ page.title }}</h1>
+            <div>By {{ page.data.author }}</div>
+            <div>{{ page.published_date | date: "%b %d, %y" }}</div>
+            <hr />
+            {{ page.content }}
+          </div>
+        </div>
+      </div>
+      
+      {% include "footer.liquid" %}
+  </body>
+</html>

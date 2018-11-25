@@ -1,0 +1,7 @@
+
+site:
+  title: Setter Engineering
+  description: Thoughts, ideas and announcements from the Setter Engineering team!
+  base_url: https://setter.engineering
+posts:
+  rss: rss.xml
